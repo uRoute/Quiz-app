@@ -23,7 +23,7 @@ button.addEventListener('click',function(){
         darkMode.style.color = 'white';
         darkModeQuiz.style.color = 'white';
         darkFinish.style.color = 'white';
-        darkBackGround.style.backgroundImage = "url(images/CbP.svg)";
+        darkBackGround.style.backgroundImage = "url(images/wa2.svg)";
         // console.log(darkBackGround.style.backgroundImage,"dark");
         overLay.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
         overLayPage.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
