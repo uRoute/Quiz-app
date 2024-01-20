@@ -5,6 +5,7 @@ export class Setting{
         $('#quiz-finish').slideUp(0);
         $('#quiz-page').slideUp(0);
         $('#alert1').hide(0);
+        $('#alert2').hide(0);
         $('#inCorrect').hide(0);
         $('#Correct').hide(0);
         this.category = document.getElementById('category');
@@ -21,17 +22,23 @@ export class Setting{
         let difficulty = Array.from(this.difficulty).find((e)=>{return e.checked}).value;
         let queNums = this.numberOfQuestions.value;
 
-        let api = `https://opentdb.com/api.php?amount=${queNums}&category=${category}&difficulty=${difficulty}`
-        let data =await this.fetchQuiz(api);
+        if(queNums<45){
+            let api = `https://opentdb.com/api.php?amount=${queNums}&category=${category}&difficulty=${difficulty}`
+            let data =await this.fetchQuiz(api);
+        
 
-        if(category&&difficulty&&queNums){
-            if(data.length>0){
-                $("#quiz-app").fadeOut(500);
-                $("#quiz-page").fadeIn(500);
-                let quiz = new Quiz(data)
+            if(category&&difficulty&&queNums){
+                if(data.length>0){
+                    $("#quiz-app").fadeOut(500);
+                    $("#quiz-page").fadeIn(500);
+                    let quiz = new Quiz(data)
+                }
+            }else{
+                $('#alert1').show(100);
             }
         }else{
-            $('#alert1').show(100);
+            $('#alert1').hide(100);
+            $('#alert2').show(100);
         }
     }
 

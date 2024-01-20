@@ -48,7 +48,6 @@ export class Quiz{
         if(userAnswer!=undefined){
             userAnswer = userAnswer.value;
             let correctAnswr = this.data[this.current].correct_answer;
-            console.log(correctAnswr);
             this.checkAnswer(userAnswer,correctAnswr);
             this.current++
             if(this.current<this.totalNums){
