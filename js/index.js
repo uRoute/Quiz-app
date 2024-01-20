@@ -23,7 +23,7 @@ button.addEventListener('click',function(){
         darkMode.style.color = 'white';
         darkModeQuiz.style.color = 'white';
         darkFinish.style.color = 'white';
-        darkBackGround.style.backgroundImage = "url('/images/Cbp.svg')";
+        darkBackGround.style.backgroundImage = "url('images/Cbp.svg')";
         // console.log(darkBackGround.style.backgroundImage,"dark");
         overLay.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
         overLayPage.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
@@ -35,7 +35,7 @@ button.addEventListener('click',function(){
         darkMode.style.background = 'linear-gradient(#e66465, #9198e5)';
         darkModeQuiz.style.background = 'linear-gradient(#e66465, #9198e5)';
         darkFinish.style.background = 'linear-gradient(to right,#8360c3, #2ebf91)';
-        darkBackGround.style.backgroundImage = "url('/images/wa.svg')"
+        darkBackGround.style.backgroundImage = "url('images/wa.svg')"
         // console.log(darkBackGround,"light");
         overLay.style.backgroundColor = 'rgba(0, 0, 0, 0.2)'
         overLayPage.style.backgroundColor = 'rgba(0, 0, 0, 0.2)';
