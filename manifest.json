@@ -1,0 +1,46 @@
+{
+    "name":"Quiz app",
+    "short_name":"Quiz",
+    "start_url":"./index.html",
+    "scope":".",
+    "display":"standalone",
+    "orientation":"portrait-primary",
+    "background_color":"#e66465",
+    "theme_color":"#9198e5",
+    "description":"Quiz for fun",
+    "icons":[
+        {
+            "src":"./images/AppImages/android/android-launchericon-48-48.png",
+            "type":"image/png",
+            "sizes":"48x48"
+        },
+        {
+            "src":"./images/AppImages/android/android-launchericon-72-72.png",
+            "type":"image/png",
+            "sizes":"72x72"
+        },
+        {
+            "src":"./images/AppImages/android/android-launchericon-96-96.png",
+            "type":"image/png",
+            "sizes":"96x96"
+        },
+        {
+            "src":"./images/AppImages/android/android-launchericon-144-144.png",
+            "type":"image/png",
+            "sizes":"144x144"
+        },
+        {
+            "src":"./images/AppImages/android/android-launchericon-192-192.png",
+            "type":"image/png",
+            "sizes":"192x192"
+        },
+        {
+            "src":"./images/AppImages/android/android-launchericon-512-512.png",
+            "type":"image/png",
+            "sizes":"512x512"
+        }
+    ],
+    "dir":"ltr",
+    "lang":"en-US"
+
+}
